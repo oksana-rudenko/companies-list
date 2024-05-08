@@ -1,0 +1,59 @@
+databaseChangeLog:
+  - changeSet:
+      id: insert companies to table
+      author: rudenko
+      changes:
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: name
+                  value: "Goldman Sachs"
+              - column:
+                  name: industry
+                  value: "Capital Markets"
+              - column:
+                  name: residence
+                  value: "200 West Street New York, NY 10282 United States"
+              - column:
+                  name: employee_amount
+                  value: 44400
+              - column:
+                  name: capitalization
+                  value: 1431540
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: name
+                  value: "Oracle Corporation"
+              - column:
+                  name: industry
+                  value: "Software Infrastructure"
+              - column:
+                  name: residence
+                  value: "2300 Oracle Way Austin, TX 78741 United States"
+              - column:
+                  name: employee_amount
+                  value: 164000
+              - column:
+                  name: capitalization
+                  value: 324901000
+        - insert:
+            tableName: companies
+            columns:
+              - column:
+                  name: name
+                  value: "Fortinet"
+              - column:
+                  name: industry
+                  value: "Software Infrastructure"
+              - column:
+                  name: residence
+                  value: "909 Kifer Road Sunnyvale, CA 94086 United States"
+              - column:
+                  name: employee_amount
+                  value: 13568
+              - column:
+                  name: capitalization
+                  value: 45151000

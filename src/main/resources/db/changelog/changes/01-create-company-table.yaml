@@ -1,0 +1,46 @@
+databaseChangeLog:
+  - changeSet:
+      id: create company table
+      author: rudenko
+      changes:
+        - createTable:
+            tableName: companies
+            columns:
+              - column:
+                  name: id
+                  type: bigint
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: name
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: industry
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: residence
+                  type: varchar(255)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: employee_amount
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: capitalization
+                  type: integer
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_deleted
+                  type: boolean
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
